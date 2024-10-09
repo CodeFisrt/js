@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //alert("script 1 from head")
+    </script>
+    <script src="my.js"></script>
+    <script>
+        //alert("script 2 from head")
+    </script>
+</head>
+
+<body>
+    <script>
+        //alert("script 3 from Body")
+       
+    </script>
+    <h1 id="myh1">Hii</h1>
+    <p>this is para</p>
+    <script>
+        debugger;
+         document.getElementById("myh1").innerText ="Welcome";
+        alert("script 4 from Body END")
+    </script>
+</body>
+
+</html>
