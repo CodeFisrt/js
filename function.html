@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function showWelcomeMessage() {
+            alert("Welcome B-26")
+        }
+        function showMyMessage(message) {
+            alert(message)
+        }
+
+        //showMyMessage("this is Message 1")
+
+        // showWelcomeMessage();
+        //execute / call //invoke
+        var num1 = 12;
+        var num2 = 33;
+
+        function addTwoNum() {
+            var result = num1 + num2;
+            console.log('Addition is ' + result)
+        }
+        // addTwoNum()
+
+        function getSquare() {
+            var mySquare = num1 * num1;
+            alert("Square of num1 is " + mySquare)
+        }
+
+        //getSquare()
+        //showMyMessage("End Of Script Tag")
+
+        function getSumOfTwoNum(number1 = 1, number2) {
+            var result = number1 + number2;
+            console.log("Additon is " + result);
+        }
+
+        function getSquare(num = 1) {
+            var sqr = num * num;
+            alert("Square is " + sqr)
+        }
+
+        getSquare(4)
+        getSquare()
+        getSumOfTwoNum(3, 6);
+
+        getSumOfTwoNum(44, 66);
+
+        getSumOfTwoNum();
+
+        getSumOfTwoNum(45);
+
+        function getSum(num1, num2) {
+            var result = num1 + num2;
+            return result;
+        }
+        debugger;
+        var res1 = getSum(2, 7);
+        var res2 = getSum(5, 9);
+        var res3 = getSum(44, 66);
+
+        function generateFullName(fname, mname, lname) {
+            return fname + ' ' + mname + " " + lname;
+        }
+        var f1 = generateFullName('chetan', 'p', 'Jogi')
+
+        function getPieValue() {
+            var pie = 3.14;
+            return pie;
+        }
+        var ss = getPieValue()
+    </script>
+
+</body>
+
+</html>

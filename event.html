@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showPopup ( ) {
+            alert("Welcome to CodeFirst")
+        }
+
+       
+        function onMouseELve( ){
+            console.log("Mouse Leave")
+        }
+        function onValueChange ( ){
+            console.log("value changes")
+        }
+        function showMessage(msg) {
+            alert(msg)
+        }
+        function mouseENtedDiv() {
+            console.log("Mouse ENtered Div")
+        }
+       
+        //click, change, keyDown
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <button onclick="showMessage('Welcome B-26')">Show Wwelcome</button>
+            </td>
+            <td>
+                <button onclick="showMessage('Our Batch will end in 3 monthns')">Show End Message</button>
+            </td>
+            <td>
+                <button onclick="showMessage('React Full Stack')">Show Course Name</button>
+            </td>
+        </tr>
+    </table>
+    <div onmouseleave="onMouseELve()"  onmouseenter="mouseENtedDiv()"  style="background-color: red;height: 300px;width:300px">
+
+    </div>
+    <button onclick="showPopup()">Show Popup</button>
+
+    <p onclick="showPopup()">Click Me</p>
+    <br>
+    <input type="text" onkeydown="onValueChange()" /> <br>
+    <select onchange="onValueChange()">
+        <option  >Mah</option>
+        <option  >Goa</option>
+        <option  >Punjab</option>
+    </select>
+</body>
+</html>
