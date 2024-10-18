@@ -100,6 +100,43 @@
         // function hideDiv() {
         //     document.getElementById("myDiv").style.display = "none"
         // }
+
+        function checkDayName() {
+            const dayName =  document.getElementById("txtDayName").value;
+            if(dayName.length == 3 ) {
+                 if(dayName == "mon") {
+                    document.getElementById("myH1").innerText = "Monday"
+                 } else if (dayName == "tue") {
+                    document.getElementById("myH1").innerText = "Tuesday"
+                 } else if (dayName == "wed") {
+                    document.getElementById("myH1").innerText = "Wednesday"
+                 } else if (dayName == "thu") {
+                    document.getElementById("myH1").innerText = "Thursday"
+                 } else if (dayName == "fri") {
+                    document.getElementById("myH1").innerText = "Friday"
+                 } else if (dayName == "sat") {
+                    document.getElementById("myH1").innerText = "Saturday"
+                 }else if (dayName == "sun") {
+                    document.getElementById("myH1").innerText = "Sunday"
+                 } else {
+                     document.getElementById("myH1").innerText = "Wrong Entry"
+                 }
+            } else {
+                document.getElementById("myH1").innerText = "Please Enter 3 char"
+            }
+        }
+    </script>
+
+    <div class="row">
+        <div class="col-3">
+            <input type="text" oninput="checkDayName()" maxlength="3" placeholder="Enter Day Strating char" id="txtDayName">
+        </div>
+        <div class="col-3">
+            <h1 id="myH1"></h1>
+        </div>
+    </div>
+    <script>
+
     </script>
 
 </body>
