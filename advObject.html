@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var employeeObj = {
+            name: 'Chetan',
+            contactDetails: {
+                contactNo: '998877665',
+                altContactNo: '324234234',
+                email: 'chetan@gmail.com',
+            },
+            address: {
+                home: {
+                    city: 'Pune',
+                    pincode: '223344',
+                    state: 'MAha',
+                },
+                office: {
+                    city: 'Mumbai',
+                    pincode: '112233',
+                    state: 'MAha',
+                } 
+            },
+            id: 2233,
+            projectName: [
+                {prodjuid:111,projName:'ABC',technology:'asdas',startDate:'asdasd',isCurrentProject:false ,tech:['htmls','csss']},
+                {prodjuid:112,projName:'DDD',technology:'asdas',startDate:'asdasd',isCurrentProject:true},
+                {prodjuid:113,projName:'ABC',technology:'asdas',startDate:'asdasd',isCurrentProject:false}
+            ],
+            technology: ["Html", "Css","JavaScript","Angular"],
+            isActive: false
+        }
+        console.log(employeeObj.contactDetails.altContactNo)
+        console.log(employeeObj.technology[1])
+        employeeObj.address.city = "Mumbai";
+    </script>
+
+</body>
+
+</html>

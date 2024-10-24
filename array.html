@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object - to store related multple information of an entity
+
+        //array - to store multple repeated infortion / similar data type
+
+        var cityArray = [ "Pune", "Mumbai", 'Nagpur', 'Thane' ];
+
+        var rollNoList = [111, 112, 113, 114, 115, 116, 117, 112];
+
+        var activeList = [ true, true, false, false,true ];
+
+        var datelIst =  [ new Date(), new Date().setMonth(2),new Date().setFullYear(2026)];
+
+        var employeeObj  = {
+            empId:123,
+            name: 'RAhul',
+            salary: 12000,
+            designation:'Sr Soft ENg'
+        }
+        console.log(cityArray);
+        console.log(cityArray[1])
+        console.log(cityArray[3])
+        
+        console.log(rollNoList[3])
+        cityArray[0] = "Thane";
+        console.log(cityArray);
+        debugger;
+        var totalCity = cityArray.length;
+        cityArray[totalCity] = "Panji"
+        var totalCity2 = cityArray.length;
+         cityArray[totalCity2] = "Panji"
+
+         //adding ele,ent at end / removing
+         cityArray.push("Jabalpur")
+         cityArray.push("Badlapur","","")
+         cityArray.pop()
+         cityArray.pop()
+         cityArray.pop()
+         cityArray.pop()
+
+        debugger;
+        cityArray.unshift("Hingna","")
+        cityArray.unshift("Jalna")
+        cityArray.shift()
+
+        cityArray.splice(3,1)
+
+
+    </script>
+    
+</body>
+</html>

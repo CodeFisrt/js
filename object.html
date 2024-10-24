@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //key, field, properties
+        var studentData = {
+            name: 'Chetan',
+            mobileNo: '123123123',
+            emailId: 'chet@gmail.com',
+            city:'Pune'
+        };
+        console.log(studentData.city)
+        console.log(studentData['mobileNo'])
+        studentData.city = "Mumbai"
+        console.log(studentData.city)
+        studentData["name"] = "Ankit"
+        console.log(studentData.name)
+
+        var employeeObj  = {
+            empId:123,
+            name: 'RAhul',
+            salary: 12000,
+            designation:'Sr Soft ENg'
+        }
+        debugger;
+        console.log(employeeObj)
+        employeeObj.city = "Thane";
+        employeeObj['state'] = "MAHA"
+        console.log(employeeObj.country)
+        console.log(employeeObj)
+
+        var productObject = {
+            productId: 334,
+            productName:'MObile 122',
+            price: '213',
+            expire:'32432423'
+        }
+
+    </script>
+    
+</body>
+</html>

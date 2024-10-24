@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var employeeList = [
+            { empId: 111, name: 'Chetan', email: 'sadasd' },
+            { empId: 222, name: 'Rahuk', email: 'sadasd' },
+            { empId: 3333, name: 'Ankit', email: 'sadasd' }
+        ];
+        console.log(employeeList)
+        console.log(employeeList[1].email)
+
+        var productList = [
+            {
+                sku: '32423',
+                productName: 'MOBILe',
+                images: ['main.jpg', 'sideview.jpg'],
+                specification: {
+                    ram: '4 gb',
+                    camera: '50 M'
+                },
+                delievrLocation: ['1111','3333']
+            },
+            {
+                sku: '222',
+                productName: 'Water Bottle',
+                images: ['topView.jpg', 'sideview.jpg'],
+                specification: {
+                    material: 'still',
+                    dimension: '50 M'
+                },
+                colors: ['red','blue']
+            }
+        ];
+        console.log(productList[1].images[0])
+
+
+    </script>
+</body>
+
+</html>
