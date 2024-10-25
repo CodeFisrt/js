@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-3">
+            <input type="text" id="txtCourseName">
+        </div>
+        <div class="col-3">
+            <button class="btn btn-success" onclick="saveCourseName()">Save </button>
+            <button class="btn btn-success" onclick="removeCourseName()">Remove </button>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-3">
+            <input type="text" id="txtCourDuration">
+        </div>
+        <div class="col-3">
+            <button class="btn btn-success" onclick="saveDuration()">Save Duration</button> 
+        </div>
+    </div>
+    <script>
+
+        var localCpurseName = localStorage.getItem("courseName");
+        document.getElementById("txtCourseName").value = localCpurseName;
+        debugger;
+        var duration = sessionStorage.getItem("duration");
+        document.getElementById("txtCourDuration").value = duration;
+
+        function saveDuration() {
+            var duration = document.getElementById("txtCourDuration").value;
+            sessionStorage.setItem('duration', duration)
+        }
+
+        function saveCourseName() {
+            var courseName = document.getElementById("txtCourseName").value;
+            debugger;
+            localStorage.setItem('courseName', courseName)
+        }
+        
+        function removeCourseName() {
+            localStorage.removeItem("courseName")
+            localStorage.clear()
+        }
+    </script>
+</body>
+</html>
