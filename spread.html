@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mahaCityList = ["Pune","Mambai","Jalna"];
+        var mpCityList = ["Indore", "Bhopal"];
+        //copy, clone, join
+
+        var indiaList = [...mahaCityList, ...mpCityList];
+        console.log(indiaList);
+        var allList = ["MNgapur",...mpCityList,"Chindwada",...mahaCityList]
+        console.log(allList);
+        var mhCopyList = [...mahaCityList]
+        console.log(mhCopyList);
+
+        var studentBasicDetails = {
+            name:"AAA",
+            studId:131,
+            class:"2nd"
+        };
+        var studentAddress = {
+            city:'Pune',
+            state: 'Mah',
+            pincode: 112233
+        };
+
+        var student = {...studentBasicDetails,...studentAddress}
+        console.log(student);
+        var student2 = {...studentBasicDetails,email:'styd@gmail.com',...studentAddress}
+        console.log(student2);
+        var studentBasicCopy = {...studentBasicDetails}
+        console.log(studentBasicCopy);
+    </script>
+</body>
+</html>
